@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
-import logo from '../../assets/logo.webp';
+import logo from '../../assets/logo.png';
 
 const Menu = () => (
   <>
     <p><a href="#home">Home</a></p>
-    <p><a href="#home">Photography</a></p>
-    <p><a href="#home">Programming</a></p>
-    <p><a href="#home">Music</a></p>
-    <p><a href="#home">Golden Globe Society</a></p>
-    <p><a href="#home">Contact</a></p>
+    <p><a href="#photography">Photography</a></p>
+    <p><a href="#programming">Programming</a></p>
+    <p><a href="#golden-globe-society">Golden Globe Society</a></p>
+    <p><a href="#music">Music</a></p>
+    <p><a href="#contact">Contact</a></p>
   </>
 );
 

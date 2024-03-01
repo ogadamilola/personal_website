@@ -1,0 +1,115 @@
+.dami__photography{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+
+    background: radial-gradient(circle at 3% 25%, rgba(92, 90, 93, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.dami__photography-feature{
+    display: flex;
+}
+
+.dami__photography-feature .dami__photography-features-container_feature{
+    margin: 0;
+}
+
+.dami__photography-feature .dami__photography-features-container_feature-text{
+    max-width: 700px;
+}
+
+.dami__photography-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+
+.dami__photography-heading h1{
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    max-width: 510px;
+    font-family: var(--font-family);
+}
+
+.dami__photography-heading p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    color: #dbb722;
+    cursor: pointer;
+}
+
+.dami__photography-heading a {
+    color: #dbb722; 
+    text-decoration: none; 
+}
+
+.dami__photography-heading a:hover {
+    text-decoration: underline; 
+}
+
+
+.dami__photography-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column layout */
+    gap: 2rem; /* Adjust the gap between grid items as needed */
+    margin-top: 2rem;
+}
+
+.dami__photography-container > div {
+    position: relative;
+    width: 100%; /* Ensures the container fits its grid area */
+    overflow: hidden; /* Optional: for handling content overflow */
+}
+
+.dami__photography-container img,
+.dami__photography-container video {
+    width: 100%; /* Ensures images/videos resize to fit their container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any default margins/padding */
+}
+
+
+@media screen and (max-width: 850px) {
+    .dami__photography-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .dami__photography-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .dami__photography-feature .dami__photography-features-container_feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .dami__photography-feature .dami__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .dami__photography-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .dami__photography-feature .dami__photography-features-container_feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

@@ -19,8 +19,8 @@
 
 
 .dami__navbar-links_logo img{
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
 }
 
 .dami__navbar-links_container{
@@ -59,18 +59,18 @@
 .dami__navbar-menu_container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align items to the start */
+    justify-content: flex-start;
     text-align: start;
-    background: var(--color-footer); /* Ensure this is a visible color */
+    background: var(--color-footer); 
     padding: 2rem;
     position: absolute;
-    top: 50px; /* Adjust based on your navbar's height */
+    top: 50px; 
     right: 0;
     margin-top: 1rem;
     min-width: 210px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000; 
 }
 
 
