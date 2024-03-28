@@ -1,0 +1,131 @@
+.dami__programming{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+
+    background: radial-gradient(circle at 3% 25%, rgba(92, 90, 93, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.dami__programming-feature{
+    display: flex;
+}
+
+.dami__programming-feature .dami__programming-features-container_feature{
+    margin: 0;
+}
+
+.dami__programming-feature .dami__programming-features-container_feature-text{
+    max-width: 700px;
+}
+
+.dami__programming-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+
+.dami__programming-heading h1{
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    max-width: 510px;
+    font-family: var(--font-family);
+}
+
+.dami__programming-heading p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    color: #dbb722;
+    cursor: pointer;
+}
+
+.dami__programming-heading a {
+    color: #dbb722; 
+    text-decoration: none; 
+}
+
+.dami__programming-heading a:hover {
+    text-decoration: underline; 
+}
+
+
+.dami__programming-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates a 3-column layout */
+    gap: 2rem; 
+    margin-top: 2rem;
+}
+
+.dami__programming-container > div {
+    position: relative;
+    width: 100%; /* Ensures the container fits its grid area */
+    overflow: hidden; 
+}
+
+.dami__programming-container img,
+.dami__programming-container video {
+    border-radius: 10px;
+    width: 100%; /* Ensures images/videos resize to fit their container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any default margins/padding */
+}
+
+
+.dami__programming-paragraph {
+    text-align: center;
+    /* position: absolute; */
+    /* left: 225%; */
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    color: #dbb722;
+    background-color: black;
+    border-radius: 7px;
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .dami__programming-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .dami__programming-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .dami__programming-feature .dami__programming-features-container_feature {
+        flex-direction: column;
+    }
+
+   
+    .dami__programming-feature .dami__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .dami__programming-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .dami__programming-feature .dami__programming-features-container_feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

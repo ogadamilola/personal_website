@@ -73,6 +73,19 @@
     z-index: 1000; 
 }
 
+.contact-item a {
+    color: black;
+    background-color: #dbb722; 
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    text-decoration: none; 
+}
+
+.contact-item a:hover {
+    opacity: 0.8; 
+}
+
+
 
 
 .dami__navbar-menu_container-links{

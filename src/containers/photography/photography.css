@@ -71,6 +71,7 @@
 
 .dami__photography-container img,
 .dami__photography-container video {
+    border-radius: 10px;
     width: 100%; /* Ensures images/videos resize to fit their container */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Removes any default margins/padding */

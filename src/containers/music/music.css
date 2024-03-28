@@ -1,0 +1,59 @@
+.dami__music{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+
+    background: radial-gradient(circle at 3% 25%, rgba(92, 90, 93, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.dami__music-feature{
+    display: flex;
+}
+
+.dami__music-container iframe::-webkit-scrollbar {
+    display: none;
+  }
+
+.dami__music-container{
+    display: flex;
+}
+  
+
+  @media screen and (max-width: 850px) {
+    .dami__music-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .dami__music-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .dami__music-feature .dami__music-features-container_feature {
+        flex-direction: column;
+    }
+
+    
+    .dami__music-feature .dami__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .dami__music-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .dami__music-feature .dami__music-features-container_feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
